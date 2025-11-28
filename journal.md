@@ -2,10 +2,6 @@
 layout: default
 title: Life Journal
 permalink: /journal/
-pagination:
-  enabled: true
-  category: journal
-  per_page: 10
 ---
 
 <section>
@@ -14,37 +10,31 @@ pagination:
   </header>
 
   <div class="posts">
+    {% assign journal_posts = site.categories.journal | sort: "date" | reverse %}
 
-    {% for post in paginator.posts %}
-    <article>
-      <a href="{{ post.url }}" class="image">
-        <img src="{{ post.image }}" alt="">
-      </a>
+    {% for post in journal_posts limit: 10 %}
+      <article>
+        <a href="{{ post.url | relative_url }}" class="image">
+          {% if post.image %}
+            <img src="{{ post.image | relative_url }}" alt="{{ post.title }}">
+          {% else %}
+            <img src="/images/pic01.jpg" alt="{{ post.title }}">
+          {% endif %}
+        </a>
 
-      <h3>{{ post.title }}</h3>
+        <h3>{{ post.title }}</h3>
+        <p class="post-meta">
+          {{ post.date | date: "%B %d, %Y" }}
+        </p>
 
-      <p>
-        {{ post.excerpt | strip_html | truncate: 130 }}
-      </p>
+        <p>
+          {{ post.excerpt | strip_html | truncate: 140 }}
+        </p>
 
-      <ul class="actions">
-        <li><a href="{{ post.url }}" class="button">More</a></li>
-      </ul>
-    </article>
+        <ul class="actions">
+          <li><a href="{{ post.url | relative_url }}" class="button">Read more</a></li>
+        </ul>
+      </article>
     {% endfor %}
-
   </div>
 </section>
-
-<!-- Pagination (Previous / Next) -->
-<ul class="pagination">
-  {% if paginator.previous_page %}
-    <li><a href="{{ paginator.previous_page_path }}">← Previous</a></li>
-  {% endif %}
-
-  <li>Page {{ paginator.page }} of {{ paginator.total_pages }}</li>
-
-  {% if paginator.next_page %}
-    <li><a href="{{ paginator.next_page_path }}">Next →</a></li>
-  {% endif %}
-</ul>

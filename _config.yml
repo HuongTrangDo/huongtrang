@@ -1,7 +1,8 @@
-title: My website
+title: Huong Trang
+email: dothihuongtrang@gmail.com
 markdown: kramdown
 theme: null
 exclude:
   - node_modules
-  - Gemfile
-  - Gemfile.lock
+  - gulpfile.js
+  - package.json

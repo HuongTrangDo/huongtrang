@@ -5,69 +5,44 @@ permalink: /journal/
 pagination:
   enabled: true
   category: journal
-  per_page: 6
+  per_page: 10
 ---
 
-# Life Journal  
-_Tiny memories — gentle moments._
+<section>
+  <header class="major">
+    <h2>Life Journal</h2>
+  </header>
 
----
+  <div class="posts">
 
-## 🔍 Filter by Year
+    {% for post in paginator.posts %}
+    <article>
+      <a href="{{ post.url }}" class="image">
+        <img src="{{ post.image }}" alt="">
+      </a>
 
-{% assign years = site.categories.journal | map: "date" | map: "year" | uniq | sort | reverse %}
+      <h3>{{ post.title }}</h3>
 
-<form method="get" id="filter">
-  <label>Select year:</label>
-  <select name="year" onchange="this.form.submit()">
-    <option value="">All</option>
-    {% for y in years %}
-      <option value="{{ y }}" {% if y == page.year %}selected{% endif %}>{{ y }}</option>
+      <p>
+        {{ post.excerpt | strip_html | truncate: 130 }}
+      </p>
+
+      <ul class="actions">
+        <li><a href="{{ post.url }}" class="button">More</a></li>
+      </ul>
+    </article>
     {% endfor %}
-  </select>
-</form>
 
----
+  </div>
+</section>
 
-## 📘 Journal Entries
-
-<div class="posts">
-
-{% assign posts = paginator.posts %}
-{% if page.year %}
-  {% assign posts = posts | where_exp: "post", "post.date | date: '%Y' == page.year" %}
-{% endif %}
-
-{% for post in posts %}
-  <article>
-    <a href="{{ post.url }}" class="image">
-      <img src="{{ post.image }}" alt="">
-    </a>
-    <h3>{{ post.title }}</h3>
-    <p class="date">{{ post.date | date: "%B %d, %Y" }}</p>
-
-    <a href="{{ post.url }}" class="button small">Read more</a>
-  </article>
-{% endfor %}
-
-</div>
-
----
-
-## 📄 Pagination
-
+<!-- Pagination (Previous / Next) -->
 <ul class="pagination">
   {% if paginator.previous_page %}
-    <li><a href="{{ paginator.previous_page_path }}">← Prev</a></li>
+    <li><a href="{{ paginator.previous_page_path }}">← Previous</a></li>
   {% endif %}
 
-  {% for p in (1..paginator.total_pages) %}
-    <li>
-      <a href="/journal/page{{ p }}" class="{% if p == paginator.page %}active{% endif %}">
-        {{ p }}
-      </a>
-    </li>
-  {% endfor %}
+  <li>Page {{ paginator.page }} of {{ paginator.total_pages }}</li>
 
   {% if paginator.next_page %}
     <li><a href="{{ paginator.next_page_path }}">Next →</a></li>

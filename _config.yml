@@ -3,14 +3,9 @@ email: dothihuongtrang@gmail.com
 markdown: kramdown
 theme: null
 
-# Collection cho Life Journal
-collections:
-  journal:
-    output: true
-    permalink: /journal/:name/
+permalink: /:categories/:title/
 
 exclude:
   - node_modules
   - gulpfile.js
   - package.json
-

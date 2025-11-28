@@ -24,7 +24,7 @@ title: Home
   </div>
 
   <span class="image object">
-    <img src="/images/cover/home_pic1.jpg" alt="" />
+    <img src="/images/cover/index_pic1.jpg" alt="" />
   </span>
 </section>
 
@@ -94,3 +94,4 @@ title: Home
     </article>
   </div>
 </section>
+

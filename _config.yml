@@ -3,7 +3,12 @@ email: dothihuongtrang@gmail.com
 markdown: kramdown
 theme: null
 
-permalink: /:categories/:title/
+paginate: 6
+paginate_path: "/journal/page:num"  # đường dẫn trang 1,2,3
+
+collections:
+  posts:
+    output: true
 
 exclude:
   - node_modules

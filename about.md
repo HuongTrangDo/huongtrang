@@ -13,8 +13,7 @@ I’m a mix of practicality and softness — someone who likes both structured t
 I grew up in a small coastal city in Vietnam, with a warm childhood and people who shaped me in quiet, meaningful ways.  
 Those early memories still stay with me.
 
-Today, I work in credit risk modeling and data science — turning data into insights, building scorecard models, and making sure decisions are fair, stable, and explainable.  
-I’m still learning at my own pace and growing a little every day.
+Today, I work in credit risk modeling and data science — turning data into insights, building scorecard models, and making sure decisions are fair, stable, and explainable. I’m still learning at my own pace and growing a little every day.
 
 ---
 

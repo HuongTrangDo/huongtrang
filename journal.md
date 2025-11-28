@@ -10,31 +10,45 @@ permalink: /journal/
   </header>
 
   <div class="posts">
+
     {% assign journal_posts = site.categories.journal | sort: "date" | reverse %}
 
     {% for post in journal_posts limit: 10 %}
-      <article>
-        <a href="{{ post.url | relative_url }}" class="image">
-          {% if post.image %}
-            <img src="{{ post.image | relative_url }}" alt="{{ post.title }}">
-          {% else %}
-            <img src="/images/pic01.jpg" alt="{{ post.title }}">
-          {% endif %}
-        </a>
+    <article>
 
-        <h3>{{ post.title }}</h3>
-        <p class="post-meta">
-          {{ post.date | date: "%B %d, %Y" }}
-        </p>
+      <!-- Thumbnail -->
+      <a href="{{ post.url | relative_url }}" class="image">
+        {% if post.image %}
+          <img src="{{ post.image | relative_url }}" alt="{{ post.title }}">
+        {% else %}
+          <img src="/images/default-thumbnail.jpg" alt="{{ post.title }}">
+        {% endif %}
+      </a>
 
-        <p>
+      <!-- Title -->
+      <h3>{{ post.title }}</h3>
+
+      <!-- Date -->
+      <p class="post-meta">
+        {{ post.date | date: "%B %d, %Y" }}
+      </p>
+
+      <!-- Excerpt -->
+      <p>
+        {% if post.excerpt %}
           {{ post.excerpt | strip_html | truncate: 140 }}
-        </p>
+        {% else %}
+          {{ post.content | strip_html | truncate: 140 }}
+        {% endif %}
+      </p>
 
-        <ul class="actions">
-          <li><a href="{{ post.url | relative_url }}" class="button">Read more</a></li>
-        </ul>
-      </article>
+      <!-- Button -->
+      <ul class="actions">
+        <li><a href="{{ post.url | relative_url }}" class="button">Read more</a></li>
+      </ul>
+
+    </article>
     {% endfor %}
+
   </div>
 </section>

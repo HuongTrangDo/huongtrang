@@ -6,7 +6,7 @@ title: About Me
 <span class="image main"><img src="/images/cover/about_pic1.jpg" alt="About me cover" /></span>
 
 ## Hi, I’m Trang.
-Hi, I’m Grace — a data scientist building a transition into AI for Healthcare and BioAI. My professional background centers around statistical modeling, machine learning, and developing end-to-end predictive systems that operate at scale. I began my journey in applied ML through credit-risk modeling, where I learned how to work with complex tabular data, design interpretable models, evaluate real-world performance, and build reliable pipelines that serve thousands of users daily.
+A data scientist building a transition into AI for Healthcare and BioAI. My professional background centers around statistical modeling, machine learning, and developing end-to-end predictive systems that operate at scale. I began my journey in applied ML through credit-risk modeling, where I learned how to work with complex tabular data, design interpretable models, evaluate real-world performance, and build reliable pipelines that serve thousands of users daily.
 
 Over time, I realized that what motivates me the most is not just modeling for business outcomes, but understanding how machine learning can contribute to human health, medical decision-making, and early diagnosis. This led me to explore BioAI — a field where ML is not only technically challenging but also meaningful in its impact. I became especially fascinated by data types that capture human physiology, such as biosignals and spectral data, and the unique modeling challenges they present: small datasets, noise, high variability, and the need for interpretability.
 

@@ -21,7 +21,7 @@ title: Home
       If you happen to stop by, thank you. It really means a lot. 🌿
     </p>
   </div>
-  <li><a href="/about.html" class="button">More</a></li>
+  <a href="/about.html" class="button">More</a>
 
   <span class="image object">
     <img src="/images/cover/index_pic1.jpg" alt="" />
@@ -94,6 +94,7 @@ title: Home
     </article>
   </div>
 </section>
+
 
 
 

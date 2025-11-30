@@ -10,14 +10,13 @@ permalink: /notes/
   </header>
 
   <!-- MACHINE LEARNING SECTION -->
-  <h3>Machine Learning</h3>
+  <h3 id="ml">Machine Learning</h3>
   <div class="posts">
     {% assign ml_posts = site.posts | where: "categories", "notes_ml" | sort: "date" | reverse %}
 
     {% for post in ml_posts %}
     <article>
 
-      <!-- Thumbnail -->
       <a href="{{ post.url | relative_url }}" class="image">
         {% if post.image %}
           <img src="{{ post.image | relative_url }}" alt="{{ post.title }}">
@@ -26,15 +25,9 @@ permalink: /notes/
         {% endif %}
       </a>
 
-      <!-- Title -->
       <h3>{{ post.title }}</h3>
+      <p class="post-meta">{{ post.date | date: "%B %d, %Y" }}</p>
 
-      <!-- Date -->
-      <p class="post-meta">
-        {{ post.date | date: "%B %d, %Y" }}
-      </p>
-
-      <!-- Excerpt -->
       <p>
         {% if post.excerpt %}
           {{ post.excerpt | strip_html | truncate: 140 }}
@@ -43,7 +36,6 @@ permalink: /notes/
         {% endif %}
       </p>
 
-      <!-- Button -->
       <ul class="actions">
         <li><a href="{{ post.url | relative_url }}" class="button">Read more</a></li>
       </ul>
@@ -55,14 +47,13 @@ permalink: /notes/
   <hr>
 
   <!-- STATISTICS SECTION -->
-  <h3>Statistics</h3>
+  <h3 id="stats">Statistics</h3>
   <div class="posts">
     {% assign stats_posts = site.posts | where: "categories", "notes_stats" | sort: "date" | reverse %}
 
     {% for post in stats_posts %}
     <article>
 
-      <!-- Thumbnail -->
       <a href="{{ post.url | relative_url }}" class="image">
         {% if post.image %}
           <img src="{{ post.image | relative_url }}" alt="{{ post.title }}">
@@ -71,15 +62,9 @@ permalink: /notes/
         {% endif %}
       </a>
 
-      <!-- Title -->
       <h3>{{ post.title }}</h3>
+      <p class="post-meta">{{ post.date | date: "%B %d, %Y" }}</p>
 
-      <!-- Date -->
-      <p class="post-meta">
-        {{ post.date | date: "%B %d, %Y" }}
-      </p>
-
-      <!-- Excerpt -->
       <p>
         {% if post.excerpt %}
           {{ post.excerpt | strip_html | truncate: 140 }}
@@ -88,7 +73,6 @@ permalink: /notes/
         {% endif %}
       </p>
 
-      <!-- Button -->
       <ul class="actions">
         <li><a href="{{ post.url | relative_url }}" class="button">Read more</a></li>
       </ul>

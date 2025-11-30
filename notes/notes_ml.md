@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Life Journal
-permalink: /notes/
+permalink: /notes/ml/
 ---
 
 <section>

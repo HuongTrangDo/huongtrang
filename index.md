@@ -20,8 +20,10 @@ title: Home
       I’m still learning, still experimenting, and still figuring things out every day.
       If you happen to stop by, thank you. It really means a lot. 🌿
     </p>
+    
+    <a href="/about.html" class="button">About Me</a>
   </div>
-  <a href="/about.html" class="button">More</a>
+  
 
   <span class="image object">
     <img src="/images/cover/index_pic1.jpg" alt="" />
@@ -94,6 +96,7 @@ title: Home
     </article>
   </div>
 </section>
+
 
 
 

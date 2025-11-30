@@ -31,39 +31,39 @@ title: Home
 <!-- Sections below -->
 <section>
   <header class="major">
-    <h2>Things I Write About</h2>
+    <h2>Little Areas of My World</h2>
   </header>
   <div class="features">
 
     <article>
-      <span class="icon solid fa-paper-plane"></span>
+      <span class="icon solid fa-brain"></span>
       <div class="content">
-        <h3>Learning & Growth</h3>
-        <p>Notes on what I’m learning and how I’m growing.</p>
+        <h3>Learning</h3>
+        <p>ML notes & self-study — the things I’m slowly trying to understand better.</p>
+      </div>
+    </article>
+
+    <article>
+      <span class="icon solid fa-hammer"></span>
+      <div class="content">
+        <h3>Building</h3>
+        <p>Small projects I enjoy making, from tiny scripts to fun experiments.</p>
       </div>
     </article>
 
     <article>
       <span class="icon solid fa-lightbulb"></span>
       <div class="content">
-        <h3>Projects & Ideas</h3>
-        <p>Small experiments and curiosities I enjoy building.</p>
+        <h3>Thinking</h3>
+        <p>Personal notes, reflections, and quiet thoughts I want to keep.</p>
       </div>
     </article>
 
     <article>
-      <span class="icon solid fa-heart"></span>
+      <span class="icon solid fa-camera-retro"></span>
       <div class="content">
-        <h3>Notes to Self</h3>
-        <p>Gentle reminders for future me.</p>
-      </div>
-    </article>
-
-    <article>
-      <span class="icon solid fa-feather"></span>
-      <div class="content">
-        <h3>Life Diary</h3>
-        <p>Tiny moments that make life warm.</p>
+        <h3>Collecting</h3>
+        <p>Moments, photos, and little things I find cute or meaningful.</p>
       </div>
     </article>
 
@@ -94,4 +94,5 @@ title: Home
     </article>
   </div>
 </section>
+
 

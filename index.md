@@ -16,7 +16,7 @@ title: Home
 
     <p>
       This site started as a simple profile page for work, but it grew into something
-      a bit more personal — part portfolio, part notes, part memories.
+      a bit more personal — part portfolio, part notes, part memories. <br>
       I’m still learning, still experimenting, and still figuring things out every day.
       If you happen to stop by, thank you. It really means a lot. 🌿
     </p>
@@ -96,6 +96,7 @@ title: Home
     </article>
   </div>
 </section>
+
 
 
 

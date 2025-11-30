@@ -9,17 +9,16 @@ title: Home
     <header>
       <h1>Hi, I’m Trang.</h1>
       <p>
-        Welcome to my little corner of the internet.<br>
-        A place for thoughts, small projects, and the tiny things I don’t want to forget.
+        Welcome to my space — a small, quiet corner where I keep the things
+        I learn, build, and care about.
       </p>
     </header>
 
     <p>
-      I originally made this page just to keep my profile in one place for work,
-      but it felt too plain…<br>
-      So now it’s part portfolio, part diary, part “things-I-find-cute-and-want-to-save.”<br>
-      I’m still learning and figuring things out every day.<br>
-      And if you happened to stop by — thank you. It genuinely means a lot. 🌿
+      This site started as a simple profile page for work, but it grew into something
+      a bit more personal — part portfolio, part notes, part memories.
+      I’m still learning, still experimenting, and still figuring things out every day.
+      If you happen to stop by, thank you. It really means a lot. 🌿
     </p>
   </div>
 
@@ -94,5 +93,6 @@ title: Home
     </article>
   </div>
 </section>
+
 
 
